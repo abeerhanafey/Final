@@ -1,0 +1,555 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkGray: #212121;
+    --LightGray: #3a3a3a;
+    --PinkColor: #D5549F;
+    --mainFont: "Emblema One", system-ui;
+    --secondaryFont: "Caveat", cursive;
+}
+
+.mainContainer {
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 3vh 7% 1vh;
+}
+
+.mainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .header .logo {
+    width: 15%;
+}
+
+.mainContainer .header .logo img {
+    width: 100%;
+}
+
+.mainContainer .header .hLine {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(240, 248, 255, 0.295);
+}
+
+.mainContainer .header .search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 25px;
+}
+
+.mainContainer .header .search input {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 80%;
+    outline: none;
+    color: #555;
+}
+
+.mainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.mainContainer .header ul li a {
+    color: #666;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--secondaryFont);
+    font-size: 19px;
+    font-weight: bold;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mainContainer .header ul li a:hover,
+.mainContainer .header ul .active a {
+    color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px 20px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mainContainer .header ul .profile:hover {
+    background-color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+.mainContainer .header ul .profile img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.mainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 50px;
+}
+
+.mainContainer .content .banner {
+    width: 100%;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: 100% 100%;
+    padding: 7vh 5%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: aliceblue;
+}
+
+.mainContainer .content .banner h1 span {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .banner h3 {
+    font-family: var(--secondaryFont);
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.mainContainer .content .banner h1 {
+    font-family: var(--mainFont);
+    font-size: 45px;
+    margin: 35px 0;
+}
+
+.mainContainer .content .banner button,
+.mainContainer .content .popular button,
+.mainContainer .content .library button {
+    background-color: var(--PinkColor);
+    color: aliceblue;
+    font-family: var(--secondaryFont);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.mainContainer .content .banner button:hover,
+.mainContainer .content .popular button:hover,
+.mainContainer .content .library button:hover {
+    background-color: aliceblue;
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .popular {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGray);
+    margin-top: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-align: center;
+}
+
+.mainContainer .content .popular h2,
+.mainContainer .content .library h2 {
+    color: var(--PinkColor);
+    font-family: var(--mainFont);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.mainContainer .content .popular h2 span,
+.mainContainer .content .library h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .popular .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.mainContainer .content .popular .cards .card {
+    width: 23%;
+    background-color: var(--LightGray);
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.mainContainer .content .popular .cards .card img {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.mainContainer .content .popular .cards .card .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #888888;
+    font-family: var(--secondaryFont);
+    font-size: 18px;
+}
+
+.mainContainer .content .popular .cards .card .data h3 {
+    color: aliceblue;
+    font-family: var(--mainFont);
+}
+
+.mainContainer .content .popular .cards .card .data .fa-star {
+    color: yellow;
+}
+
+.mainContainer .content .popular .cards .card .data .fa-download {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .popular .cards .card img:hover {
+    transform: rotate(5deg) scale(1.1);
+    -webkit-transform: rotate(5deg) scale(1.1);
+    -moz-transform: rotate(5deg) scale(1.1);
+    -ms-transform: rotate(5deg) scale(1.1);
+    -o-transform: rotate(5deg) scale(1.1);
+}
+
+.mainContainer .content .popular .cards .card .img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.mainContainer .content .library {
+    background-color: var(--DarkGray);
+    width: 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mainContainer .content .library .gaming {
+    width: 100%;
+}
+
+.mainContainer .content .library .gaming .game {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.mainContainer .content .library .gaming .game img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.mainContainer .content .library .gaming .game h3 {
+    color: aliceblue;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.mainContainer .content .library .gaming .game p {
+    color: #666;
+    font-family: var(--secondaryFont);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mainContainer .content .library .gaming .game button {
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+    padding: 8px 20px;
+    font-size: 22px;
+    font-family: var(--secondaryFont);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: bold;
+}
+
+.mainContainer .content .library .gaming .game .btn {
+    color: var(--PinkColor);
+    border-color: var(--PinkColor);
+}
+
+
+.mainContainer .footer {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--secondaryFont);
+    font-size: 22px;
+    margin: 50px 0 20px;
+}
+
+.mainContainer .footer span {
+    color: var(--PinkColor);
+    font-family: var(--mainFont);
+}
+
+.mainContainer .header #check,
+.mainContainer .header label i {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+
+    .mainContainer .header .logo {
+        width: 20%;
+    }
+
+    .mainContainer .header .search {
+        width: 50%;
+    }
+
+    .mainContainer .header ul {
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .mainContainer .content .banner h1 {
+        font-size: 30px;
+    }
+
+    .mainContainer .content .popular h2 {
+        font-size: 32px;
+    }
+
+    .mainContainer .content .library h2 {
+        font-size: 32px;
+    }
+
+    .mainContainer .content .library .gaming .game h3 {
+        font-size: 16px;
+    }
+
+    .mainContainer .content .popular .cards .card .data h3 {
+        font-size: 16px;
+    }
+
+    .mainContainer .content .popular .cards .card {
+        width: 30%;
+    }
+
+    .mainContainer .content .library .gaming .game {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .mainContainer .content .banner h3 {
+        font-size: 20px;
+    }
+
+    .mainContainer .content .banner h1 {
+        font-size: 25px;
+    }
+
+    .mainContainer .content .banner button {
+        font-size: 16px;
+    }
+
+    .mainContainer .content .popular .cards .card {
+        width: 45%;
+    }
+
+    .mainContainer .content .library .gaming .game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mainContainer .header .hLine {
+        display: none;
+    }
+
+    .mainContainer .header .search {
+        /* display: none; */
+        order: 4;
+        width: 90%;
+        margin: auto;
+    }
+
+    .mainContainer .header ul {
+        background-color: rgba(240, 248, 255, 0.333);
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        padding: 2vh 4%;
+        border-radius: 20px 0px 0px 20px;
+        -webkit-border-radius: 20px 0px 0px 20px;
+        -moz-border-radius: 20px 0px 0px 20px;
+        -ms-border-radius: 20px 0px 0px 20px;
+        -o-border-radius: 20px 0px 0px 20px;
+        box-shadow: 4px 4px 4px #fa9ad2;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transform-origin: right;
+        transform: rotateY(90deg);
+        margin-top: 0;
+        -webkit-transform: rotateY(90deg);
+        -moz-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+}
+
+    .mainContainer .header ul li a {
+        font-size: 20px;
+        color: aliceblue;
+
+    }
+
+    .mainContainer .header ul li {
+        /* width: 80%; */
+        border-bottom: 1px solid #6666666b;
+    }
+
+    .mainContainer .header label i {
+        display: block;
+        color: var(--PinkColor);
+        font-size: 35px;
+    }
+
+    .mainContainer .header .logo {
+        width: 30%;
+    }
+
+    .mainContainer .header input[type="checkbox"]:checked ~ ul {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+
+    .mainContainer .header .search {
+        margin-top: -38vh;
+    }
+
+    .mainContainer .content {
+        margin-top: -25vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainContainer .content .popular .cards .card {
+        width: 80%;
+        margin: auto;
+    }
+
+    .mainContainer .content .library .gaming .game {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .mainContainer .content .library .gaming .game img {
+        width: 40%;
+        margin: auto;
+    }
+
+
+    .mainContainer .content .library h2,
+    .mainContainer .content .popular h2 {
+        font-size: 25px;
+    }
+  
+}
